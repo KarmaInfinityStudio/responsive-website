@@ -87,14 +87,44 @@ nav ul li a:hover {
 
 .col-1 h4{
     margin: 30px 0;
+    margin-bottom: 10px;
     font-size:  20px; 
 }
 
-button {
+.buynow {
     width: 140px;
     border: 0;
     padding: 12px 10px;
     outline: none;
     color: #fff;
-    background: linear-gradient(to right #fb5283,#ff3527);
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+button img{
+    width: 30px;
+    display: none;
+}
+
+button:hover img{
+    display: block;
+}
+
+button:hover {
+    width:160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background:linear-gradient(to right, #ff469f, #ff6062); 
+    position:absolute;
+    left:-40px ;
+    top:8px ;
 }
