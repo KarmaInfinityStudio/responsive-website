@@ -128,3 +128,21 @@ button:hover {
     left:-40px ;
     top:8px ;
 }
+.col-2 {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+
+}
+
+.col-2 .controller {
+    width: 90%;
+}
+
+.color-box {
+    position:absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to right, #ff469f, #ff6062); ;
+}
